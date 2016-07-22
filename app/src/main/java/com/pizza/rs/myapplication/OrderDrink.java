@@ -9,21 +9,19 @@ import android.view.View;
 
 import com.pizza.rs.myapplication.R;
 
-public class DisplayMessageActivity extends Activity {
-
-
+public class OrderDrink extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_message_activity);
+        setContentView(R.layout.activity_order_drink);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.display_message, menu);
+        getMenuInflater().inflate(R.menu.order_drink, menu);
         return true;
     }
 
@@ -39,20 +37,6 @@ public class DisplayMessageActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public  void pizzaOrderPage(View view)
-    {
-        Intent intent = new Intent(this, OrderPizza.class);
-        startActivity(intent);
-
-
-    }
-    public  void drinkOrderPage(View view)
-    {
-        Intent intent = new Intent(this, OrderDrink.class);
-        startActivity(intent);
-
-
-    }
     public  void checkoutPage(View view)
     {
         Intent intent = new Intent(this, CheckoutPage.class);

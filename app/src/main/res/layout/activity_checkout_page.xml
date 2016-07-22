@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0defab9c">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:layout_width="330dp"
+                android:layout_height="300dp"
+                android:id="@+id/listView"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal|top"
+                android:background="@color/white"
+                android:layout_margin="30px" />
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+           >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Order"
+                android:id="@+id/button2"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_above="@+id/button3"
+                android:layout_centerHorizontal="true"
+                android:background="@color/yellow"
+                android:onClick="displayMessageActivity"
+                android:layout_marginBottom="35dp"
+                android:padding="12sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place Order"
+                android:id="@+id/button3"
+                android:layout_marginBottom="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/yellow"
+                android:padding="12sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

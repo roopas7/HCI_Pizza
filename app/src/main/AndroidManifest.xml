@@ -20,6 +20,23 @@
             android:name=".DisplayMessageActivity"
             android:label="@string/title_activity_display_message" >
         </activity>
+        <activity
+            android:name=".OrderPizza"
+            android:label="@string/title_activity_order_pizza" >
+        </activity>
+        <activity
+            android:name=".OrderDrink"
+            android:label="@string/title_activity_order_drink" >
+        </activity>
+        <activity
+            android:name=".CheckoutPage"
+            android:label="@string/title_activity_checkout_page" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

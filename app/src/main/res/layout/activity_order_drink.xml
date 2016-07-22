@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background ="#0defab9c">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Build Your Pizza"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Drink Size"
+        android:id="@+id/textView6"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10px"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Small"
+        android:id="@+id/radioButton"
+        android:checked="false"
+        android:layout_above="@+id/textView7"
+        android:layout_toLeftOf="@+id/textView5"
+        android:layout_toStartOf="@+id/textView5" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium"
+        android:id="@+id/radioButton2"
+        android:checked="false"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        android:id="@+id/radioButton3"
+        android:layout_alignBottom="@+id/radioButton2"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Flavor"
+        android:id="@+id/textView7"
+        android:layout_marginTop="22dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/radioButton2"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coke"
+        android:id="@+id/checkBox"
+        android:checked="false"
+        android:layout_below="@+id/textView7"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6"
+        android:layout_marginTop="16dp"
+        android:textSize="17sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7-Up"
+        android:id="@+id/checkBox2"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:checked="false"
+        android:layout_below="@+id/checkBox"
+        android:textSize="17sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orange Cola"
+        android:id="@+id/checkBox3"
+        android:checked="false"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2"
+        android:textSize="17sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cherry Cola"
+        android:id="@+id/checkBox4"
+        android:checked="false"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignLeft="@+id/checkBox3"
+        android:layout_alignStart="@+id/checkBox3"
+        android:textSize="17sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to order"
+        android:id="@+id/button5"
+        android:layout_below="@+id/checkBox4"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_marginTop="68dp"
+        android:background="@color/yellow"
+        android:padding="12sp"
+        android:onClick="checkoutPage"/>
+
+</RelativeLayout>
+    </LinearLayout>

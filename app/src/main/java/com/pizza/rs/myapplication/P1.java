@@ -10,7 +10,7 @@ import android.view.View;
 
 public class P1 extends Activity {
 
-    string home_icon = ""
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

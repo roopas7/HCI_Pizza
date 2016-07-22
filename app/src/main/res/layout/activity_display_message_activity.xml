@@ -6,15 +6,56 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background ="#0defab9c"
     tools:context="com.pizza.rs.myapplication.DisplayMessageActivity"
-    android:background ="@color/maroon">
-    >
+   >
 
     <TextView
-        android:text="CURRENT ORDER"
+        android:text="WHAT WOULD YOU LIKE TO ADD TO YOUR ORDER ??"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColorHighlight="@color/yellow"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        />
+    <Button
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:background ="@drawable/pizza1"
+         android:textColorHighlight="@color/black"
 
+        android:onClick="pizzaOrderPage"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignStart="@+id/textView"
+        android:paddingLeft="40sp"
+        android:paddingEnd="40sp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:background ="@drawable/drink"
+
+        android:textColorHighlight="@color/black"
+
+        android:onClick="drinkOrderPage"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/textView"
+        android:id="@+id/button2"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish Order"
+        android:id="@+id/button"
+        android:textColorHighlight="@color/black"
+        android:background ="@color/yellow"
+        android:onClick="checkoutPage"
+        android:layout_marginBottom="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="12sp" />
 </RelativeLayout>
